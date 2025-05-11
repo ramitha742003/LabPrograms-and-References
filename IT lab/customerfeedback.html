@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>customer feedback</title>
+</head>
+<body style="font-size:26;">
+<h1>Customer Feedback</h1>
+<p>Thank you for choosing our products! We would love to hear your feedback so that we can continue to improve our services.</p>
+<button onclick="showFeedbackForm()">Leave Feedback</button>
+<script>
+function showFeedbackForm()
+{
+let name=prompt("Please enter your name:");
+let email=prompt("Please enter your email address:");
+let rating=prompt("Please rate your experence from 1 to 5:");
+let comment=prompt("Please leave a comment");
+if(name && email && rating && comment)
+{
+let result=confirm("Thank you for your feedback! Do you want to submit your feedback.");
+if(result)
+{
+alert("Your feedback has been submitted. Thank you for your valuable input!");
+}
+}
+else
+{
+alert("Please fill in all the fields to submit your feedback.");
+}
+}
+</script>
+</body>
+</html>

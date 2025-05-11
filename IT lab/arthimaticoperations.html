@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>arithmetic operations</title>
+</head>
+<body>
+<h1>ARITHMETIC OPERATION</h1>
+<script>
+function add()
+{
+var n1=parseInt(document.getElementById("n1").value);
+var n2=parseInt(document.getElementById("n2").value);
+var r=n1+n2;
+alert("the sum of "+n1+" and "+n2+" is "+r);
+}
+function sub()
+{
+var n1=parseInt(document.getElementById("n1").value);
+var n2=parseInt(document.getElementById("n2").value);
+var r=n1-n2;
+alert("the difference of "+n1+" and "+n2+" is "+r);
+}
+function mul()
+{
+var n1=parseInt(document.getElementById("n1").value);
+var n2=parseInt(document.getElementById("n2").value);
+var r=n1*n2;
+alert("the product of "+n1+" and "+n2+" is "+r);
+}
+function div()
+{
+var n1=parseInt(document.getElementById("n1").value);
+var n2=parseInt(document.getElementById("n2").value);
+var r=n1/n2;
+alert("the division of "+n1+" and "+n2+" is "+r);
+}
+</script>
+<form>
+num1:<input type="text" id="n1"/><br><br>
+num2:<input type="text" id="n2"/><br><br>
+<input type="button" value="Addition" onclick="add()"/><br><br>
+<input type="button" value="Substraction" onclick="sub()"/><br><br>
+<input type="button" value="Multiplication" onclick="mul()"/><br><br>
+<input type="button" value="Division" onclick="div()"/>
+</form>
+</body>
+</html>
