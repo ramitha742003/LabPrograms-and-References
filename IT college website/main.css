@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: Arial;
+}
+
+.header 
+{
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+}
+
+.header h1
+{
+  font-size: 40px;
+  color:red;
+}
+
+.header h3, h5
+{
+  color:blue;
+}
+
+.navbar 
+{
+  overflow: hidden;
+  background-color: purple;
+}
+
+.navbar a 
+{
+  float: left;
+  color: white;
+  padding: 14px 20px;
+}
+
+.row 
+{  
+  display: flex;
+}
+
+.side 
+{
+  flex: 30%;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.main 
+{   
+  flex: 70%;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.footer 
+{
+  padding: 20px;
+  background: lightblue;
+}
+
