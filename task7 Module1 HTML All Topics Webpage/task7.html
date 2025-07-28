@@ -1,0 +1,467 @@
+<!-- Example of Webpage covering all topics of HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Example of every HTML tag usage">
+<title>Complete HTML Tags Example</title>
+
+<!-- 
+In external stylesheets, all CSS styles are putting into seperate file, save as .css  extension. To include stylesheets into HTML document, we use <link> element inside <head> element. Synatx of <link> tag is
+<link rel="stylesheet" href="Path of css file" type="text/css"></link>
+-->
+
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+img {
+display: block;
+margin: auto;
+width: 50%;
+}
+header, footer {
+background-color: #f4f4f4;
+padding: 10px;
+text-align: center;
+}
+nav {
+background-color: #ddd;
+padding: 10px;
+}
+section, article, aside {
+margin-bottom: 20px;
+padding: 15px;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+}
+table, th, td {
+border: 1px solid #ddd;
+border-collapse: collapse;
+padding: 8px;
+}
+.highlight {
+background-color: yellow;
+}
+blockquote {
+margin-left: 20px;
+border-left: 5px solid #ccc;
+padding-left: 10px;
+}
+figure {
+text-align: center;
+margin: 10px 0;
+}
+figcaption {
+font-size: 14px;
+color: #555;
+}
+</style>
+
+<script>
+console.log("Page loaded successfully!");
+</script>
+
+</head>
+<body>
+
+<header>
+<h1>Welcome to My Complete HTML Page</h1>
+<p>This page includes every HTML tag.</p>
+<p><dfn>HTML</dfn> stands for Hypertext Markup Language, which is the standard for web page structure.</p>
+</header>
+
+<nav>
+<ul type="none">
+<li><a href="#section1">Section 1</a></li>
+<li><a href="#section2">Section 2</a></li>
+<li><a href="#section3">Section 3</a></li>
+</ul>
+</nav>
+
+<section id="section1">
+<h2>Introduction</h2>
+<p>This webpage is a demonstration of various HTML tags used in practice. Below are examples of text formatting, media, forms, tables, and more!</p>
+<img src="https://as2.ftcdn.net/v2/jpg/03/05/23/35/1000_F_305233591_U7DvegTtiIoP2CWNUpR5qxrFvqpjpYW9.jpg" alt="html"></img>
+<article>
+<h3>Text Formatting</h3>
+<p><b>This is bold text.</b></p>
+<p><strong>This is strongly emphasized text.</strong></p>
+<p><i>This is italic text.</i></p>
+<p><em>This is emphasized text.</em></p>
+<p><small>This is smaller text.</small></p>
+<p><mark class="highlight">This is highlighted text.</mark></p>
+<p><del>This is deleted text.</del></p>
+<p><ins>This is inserted text.</ins></p>
+<p>Water is H<sub>2</sub>O.</p>
+<p>E = mc<sup>2</sup>.</p>
+<p><u>This is underlined text.</u></p>
+<pre>This is preformatted text.</pre>
+<p><tt>This is teletype text.</tt></p>
+<p><abbr title="Hypertext Markup Language">HTML</abbr> is a markup language.</p>
+<p><code>This defines a piece of code.</code></p>
+<p><cite>This defines title of creation and renders in italic.</cite></p>
+<p>This is a <q>quote inside a paragraph</q> for context.</p>
+<p><kbd>kbd defines a keyboard input.</kbd></p>
+</article>
+<aside>
+<h3>Side Note</h3>
+<p>This is an aside element with additional information related to the main content.</p>
+</aside>
+</section>
+
+<section id="section2">
+<h2>Media and Links</h2>
+<p>Here are some examples of media like audio and video tag:</p>  
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<video width="320" height="240" controls>
+<source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+</video>
+<h3>iframe tag</h3>
+<p>Reference Video of HTML:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=c_FXlTMXrbr40vfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Visit <a href="https://www.examplewebsite.com" target="_blank">Example Website</a></p>
+<picture>
+<source srcset="https://via.placeholder.com/400" media="(max-width: 600px)">
+<img src="https://via.placeholder.com/800" alt="Placeholder Image">
+</picture>
+<br>
+<figure>
+<img src="https://via.placeholder.com/400" alt="Sample Image">
+<figcaption>This is a sample image with a caption.</figcaption>
+</figure>
+</section>
+
+<section id="section3">
+<h2>Form Example</h2>
+<form action="#" method="post">
+<form>
+<fieldset>
+<h3>Application Form</h3>
+<br>
+<label>Name:</label>
+<input type="text" placeholder="First name"/>
+<input type="text" placeholder="Last name"/>
+<br><br>
+<label>Father Name:</label>
+<input type="text" name="father name"/>
+<br><br>
+<label>Gender:</label>
+<input type="radio" name="button1" value="Male">Male</input>
+<input type="radio" name="button2" value="Female">Female</input>
+<br><br>
+<label>Category:</label>
+<input type="text" name="category">
+<br><br>
+<label>DOB:</label>
+<input type="text" name="dob">
+<br><br>
+<labe>Phone number:</label>
+<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<br><br>
+<label>Nationality:</label>
+<input type="text" name="nation">
+<br><br>
+<fieldset>
+<legend>contact details</legend>
+<label>Address:</label>
+<textarea name="textarea" rows="5" cols="30"></textarea>
+<br><br>
+<label>Email:</label>
+<input type="text" name="email"/>
+<br><br>
+<label>Phone no:</label>
+<input type="text" name="phoneno"/>
+</fieldset>
+<br>
+<label>Course:</label>
+<select name="select course" >
+<option selected="selected" value=" ">select course</option>
+<option>BA</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>BCom</option>
+<option>BSc</option>
+</select>
+<br><br>
+<label>II Language:</label>
+<select name="select language" >
+<option selected="selected" value=" ">select language</option>
+<option>Kannada</option>
+<option>Hindi</option>
+<option>Sanskrit</option>
+</select>
+<br><br>
+<label>Co-curricular activities:</label>
+<input type="checkbox" name="cb1" value="sports">Sports</input>
+<input type="checkbox" name="cb2" value="NSS">NSS</input>
+<input type="checkbox" name="cb3" value="NCC">NCC</input>
+<input type="checkbox" name="cb4" value="culturals">Culturals</input>
+<br><br>
+<label>Puc/12th board:</<label>
+<select name="select board" >
+<option selected="selected" value=" ">select board</option>
+<option>PUC</option>
+<option>12th board</option>
+<option>Intermediate</option>
+</select>
+<br><br>
+<label>Board registration no:</label>
+<input type="text" name="regno"/>
+<br><br>
+<label>Percentage:</label>
+<input type="text" name="percentage"/>
+<br><br>
+Upload your 10<sup>th</sup> and 12<sup>th</sup> marks card:
+<input type="file" name="newfile"/>
+<br><br>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/>
+<input type="button" value="ClinkMe" onclick="alert('The Form is created')" />
+</fieldset>
+</forms>
+</section>
+
+<section id="section4">
+<h2>Lists and Tables</h2>
+<h3>Unordered List</h3>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<h3>Ordered List</h3>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3>Definition List</h3>
+<dl>
+<dt>HTML</dt>
+<dd>Hypertext Markup Language</dd>
+<dt>CSS</dt>
+<dd>Cascading Style Sheets</dd>
+</dl>
+<h3>Table Example</h3>
+<table>
+<caption>Sample Table</caption>
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Row 1, Cell 1</td>
+<td>Row 1, Cell 2</td>
+</tr>
+<tr>
+<td>Row 2, Cell 1</td>
+<td>Row 2, Cell 2</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2">Footer content</td>
+</tr>
+</tfoot>
+</table>
+</section>
+
+<section id="section5">
+<h2>Lists and Tables EXAMPLE</h2>
+<p>
+<h2>UNDER GRADUATE PROGRAMMES</h2>
+<h3>Ability Enhancement Compulsory Course (AECC):</h3>
+<ol type="i">
+<li>Kannada</li>
+<li>Sanskrit</li>
+<li>Hindi</li>
+<li>English</li>
+</ol>
+<h4>DISCIPLINE SPECIFIC CORE COURSES (DSCC) OFFERED:</h4>
+<ol type="I">
+<li>B.Sc. Program :</li>
+<ol type="1">
+<li>Physics</li>
+<li>Chemistry</li>	
+<li>Mathematics</li>
+<li>Computer Science</li>
+<li>Botany</li>
+<li>Zoology</li>
+<li>Microbiology</li>
+<li>Bio-Technology</li>
+<li>Clinical Nutrition and Dietetics</li>
+</ol>
+<br>
+<li>B.A. Program :</li>
+<ol type="a">	
+<li>History</li>
+<li>Sociology</li>
+<li>Economics</li>	
+<li>Journalism</li>
+<li>Psychology</li>
+<li>Optional Kannada</li>
+<li>Optional English</li>
+</ol>
+<br>
+<li>B.COM (BUSINESS DATA ANALYTICS)</li><br>
+<li>B.COM (ACCOUNTING & FINANCE)</li><br>
+<li>B.C.A (REGULAR)</li><br>
+<li>B.B.A (REGULAR)</li><br>
+<li>B.VOC.</li>
+<ul type="circle">
+<li>Information Technology</li>
+<li>Retail Management</li>
+<li>Coaching for CA - Foundation Course</li>
+</ul>
+</ol>
+<h2>POST GRADUATE PROGRAMMES</h2>
+<h4>COURSES OFFERED</h4>
+<ul type="square">
+<li>M.Com</li>
+<li>M.Sc. (Mathematics)</li>
+<li>M.Sc. (Organic Chemistry)</li>
+</ul>
+</p>
+<caption><b style = "color: brown;">UG Courses</b></caption>
+<table border="1" cellpadding="15px">
+<tr>
+<th>SLNo.</th><th>Course</th><th>Combinations</th>
+</tr>
+<tr>
+<td>1</td>
+<td>B.A.</td>
+<td>History, Economics, Sociology, Psychology, Journalism, Optional English.</td>
+</tr>
+<tr>
+<td rowspan="2">2</td>
+<td rowspan="2">B.Sc.</td>
+<td>Physics, Chemistry, Mathematics, Computer Science, Botany, Zoology, Microbiology, Bio-Technology.</td>
+</tr>
+<tr>
+<td>Clinical Nutrition and Dietetics</td>
+</tr>
+<tr>
+<td rowspan="5">3</td>
+<td rowspan="5">B.Com & CA</td>
+<td>Regular</td>
+</tr>
+<tr>
+<td>Accounting and Finance</td>
+</tr>
+<tr>
+<td>Business Data Analytics</td>
+</tr>
+<tr>
+<td>International Finance</td>
+</tr>
+<tr>
+<td>Taxation</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B.B.A.</td>
+<td>Regular</td>
+</tr>
+<tr>
+<td>5</td>
+<td>B.C.A.</td>
+<td>Regular</td>
+</tr>
+<tr>
+<td>6</td>
+<td>B.Voc</td>
+<td>Information Technology</td>
+</tr>
+</table>
+<br>
+<caption><b style = "color: brown;">PG Courses</b></caption>
+<table border="1" cellpadding="15px">
+<tr>
+<th>SLNo.</th><th>Course</th>
+</tr>
+<tr>
+<td>1</td>
+<td>M.Com</td>
+</tr>
+<tr>
+<td>2</td>
+<td>M.Sc Mathematics</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M.Sc Organic Chemistry</td>
+</tr>
+</table>
+</section>
+
+<hr>
+
+<details>
+<summary>Click to reveal more information</summary>
+<p>This is some additional information that is initially hidden.</p>
+</details>
+
+<blockquote cite="https://www.example.com">
+"This is a famous quote from a notable individual."
+</blockquote>
+
+<address>
+<p>For inquiries, contact us at:</p>
+<p>email@example.com</p>
+</address>
+
+<hr>
+
+<section id="section6">
+<h2>Additional Tags</h2>
+<h3>Div & Span Tag</h3>
+<div>
+<p>The <code>&lt;div&gt;</code> tag is a block-level element often used for grouping content.</p>
+<span>This is an example of the <code>&lt;span&gt;</code> tag used for inline content.</span>
+</div>
+  
+<br>
+
+<h3>Progress Bar</h3>
+<progress value="70" max="100"></progress>
+
+<br><br>
+
+<datalist id="browsers">
+<option value="Chrome">
+<option value="Firefox">
+<option value="Safari">
+<option value="Edge">
+</datalist>
+<h3>Datalist</h3>
+<label for="browser">Choose a browser:</label>
+<input list="browsers" id="browser" name="browser">
+</section>
+
+<section id="section7">
+<h2>iframe Tag Example</h2>
+<iframe src="https://www.facebook.com" width="600" height="400" title="Example Iframe"></iframe>
+</section>
+
+<hr>
+<footer>
+<p>&copy; 2025 Example Webpage</p>
+<p>FOLLOW US ON</p>
+<p><a href="https://www.facebook.com" target="_self">FACEBOOK</a></p>
+<p><a href="https://www.instagram.com" target="_parent">INSTAGRAM</a></p>
+<p><a href="https://x.com" target="_top">TWITTER</a></p>
+<p>Powered by <a href="https://examplewebsite.com" target="_blank">EXAMPLE WEBPAGE</a></p>
+</footer>
+<hr>
+
+</body>
+</html>
